@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario</title>
+</head>
+<body>
+    <h2>Formulario</h2>
+    <form id="formulario" onsubmit="return validarFormulario()">
+        <label for="nombre">Nombre:</label><br>
+        <input type="text" placeholder="Escribe tu nombre" id="nombre" name="nombre" required><br>
+        
+        <label for="apellido">Apellido:</label><br>
+        <input type="text" placeholder ="Escribe tu apellido" id="apellido" name="apellido" required><br>
+        
+        <label for="legajo">Legajo:</label><br>
+        <input type="text" placeholder ="Escribe tu legajo" id="legajo" name="legajo" required><br>
+        
+        <label for="email">Correo Electrónico:</label><br>
+        <input type="email" placeholder ="Escribe tu email" id="email" name="email" required><br>
+        
+        <label>Materias y Notas:</label><br>
+        <input type="text" name="materia1" placeholder="Materia 1">
+        <input type="number" name="nota1" min="0" max="10"><br>
+        <input type="text" name="materia2" placeholder="Materia 2">
+        <input type="number" name="nota2" min="0" max="10"><br>
+        <input type="text" name="materia3" placeholder="Materia 3">
+        <input type="number" name="nota3" min="0" max="10"><br>
+        <input type="text" name="materia4" placeholder="Materia 4">
+        <input type="number" name="nota4" min="0" max="10"><br>
+        <input type="text" name="materia5" placeholder="Materia 5">
+        <input type="number" name="nota5" min="0" max="10"><br><br>
+        
+        <label for="promedio">Promedio:</label>
+        <input type="text" id="promedio" name="promedio" readonly><br><br>
+        
+        <button type="submit">Calcular Promedio</button>
+    </form>
+    <p id="mensajeError" class="error"></p>
+    
+    <script src="script.js"></script>
+</body>
+</html>
